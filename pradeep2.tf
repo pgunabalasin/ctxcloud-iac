@@ -57,7 +57,7 @@ resource "aws_route_table" "private" {
     Name = "private-route-table"
   }
 }
-
+#test
 resource "aws_route_table_association" "private" {
   subnet_id      = module.vpc.private_subnet_id
   route_table_id = aws_route_table.private.id
